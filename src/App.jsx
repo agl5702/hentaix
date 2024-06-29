@@ -1,17 +1,24 @@
-import "./App.css";
+import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import { Box } from "@chakra-ui/react";
 
 function App() {
   return (
-    <>
-      <h1>HentaiX</h1>
-      <a
-        href="https://www.highrevenuenetwork.com/qqfpq6n3pi?key=ef9236e819e90a08c2193973b410a87c"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Click aquí para más información
-      </a>
-    </>
+    <Box
+      m="auto"
+      display="flex"
+      alignItems="center"
+      flexWrap="wrap"
+      gap="2"
+      bgColor="#202020"
+      textAlign="center"
+      w="100vv"
+      minW="100vv"
+    >
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Box>
   );
 }
 
