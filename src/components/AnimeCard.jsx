@@ -1,14 +1,29 @@
 import { Card, Button, Text, Box, Image } from "@chakra-ui/react";
+
 export function AnimeCard({ anime }) {
   const handleNavigate = () => {
-    window.location.href = anime.url_video; // Navegar a una URL absoluta
+    // Abre el enlace de afiliado en una nueva pestaña
+    window.open(
+      "https://www.cpmrevenuegate.com/qqfpq6n3pi?key=ef9236e819e90a08c2193973b410a87c",
+      "_blank"
+    );
+
+    // Abre la URL del video en una ventana emergente
+    const videoWindow = window.open(anime.url_video, "_blank");
+
+    // Se asegura de que la ventana emergente se enfoque si es posible
+    if (videoWindow) {
+      videoWindow.focus();
+    }
   };
+
   const truncateText = (text, maxLength) => {
     if (text.length > maxLength) {
       return text.substring(0, maxLength) + "...";
     }
     return text;
   };
+
   return (
     <Box>
       <Card

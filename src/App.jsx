@@ -12,7 +12,7 @@ function App() {
       gap="2"
       bgColor="#202020"
       textAlign="center"
-      w="100vv"
+      w="100vw"
       minW="100vv"
     >
       <Routes>
